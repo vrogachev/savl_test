@@ -1,0 +1,72 @@
+.block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color-white);
+    &_accent {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.form {
+  width: 100%;
+  margin-top: 48px;
+  column-gap: 20px;
+  max-width: 660px;
+  display: flex;
+  justify-content: space-between;
+  &__label {
+    width: 100%;
+    position: relative;
+    &_icon {
+      position: absolute;
+      left: 16px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 20px;
+      max-height: 20px;
+    }
+  }
+  &__input {
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    padding: 0 34px 0 44px;
+    color: var(--color-white);
+    background: var(--color-blue);
+    border-radius: var(--border-radius-s);
+    border: 1px solid var(--color-accent);
+    &::placeholder {
+      color: var(--color-placeholder);
+    }
+  }
+  &__button {
+    width: 90px;
+    height: 32px;
+    cursor: pointer;
+    padding: 0 14px;
+    font-weight: 500;
+    border-radius: var(--border-radius-s);
+    background: var(--color-accent);
+  }
+  &__clear {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 12px;
+    margin: auto;
+    max-width: 14px;
+    max-height: 14px;
+    &_icon {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

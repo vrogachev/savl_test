@@ -1,0 +1,11 @@
+.block {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  &__text {
+    color: #fff;
+    font-size: 21px;
+  }
+}
